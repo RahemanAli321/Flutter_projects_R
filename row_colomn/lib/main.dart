@@ -9,17 +9,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: ("Container Widget"),
       home: Scaffold(
-
         appBar: AppBar(
           title: Text("Container Widget"),
           backgroundColor: Colors.blueGrey,
         ),
-
         body: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           // crossAxisAlignment: CrossAxisAlignment.center,
           // mainAxisSize: MainAxisSize.max,
-
           children: [
             Container(
               child: Center(child: Text("Child 1")),
@@ -58,8 +55,6 @@ class MyApp extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(color: Colors.indigo,offset: Offset(12, 12)),
                   ]
-
-
               ),
             ),
           ],
@@ -105,10 +100,6 @@ class MyApp extends StatelessWidget {
           )
         )
       ),
-
-
     );
-
-
   }
 }
