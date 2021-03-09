@@ -26,7 +26,7 @@ class Myapp extends StatelessWidget {
                    color: Colors.green,
                    child: Center(
                      child: Text(
-                          "Hello",
+                          "Hellggo",
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.w500,
