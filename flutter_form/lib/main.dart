@@ -68,7 +68,7 @@ class _FormsState extends State<Forms> {
               child: Text("Submit"),
               onPressed: () {
                 if(keys.currentState.validate()){
-                  Scaffold.of(context).showSnackBar(SnackBar(content: Text("Validation is Going"),));
+                  Scaffold.of(context).showSnackBar(SnackBar(content: Text("Vaalidation is Going"),));
                 }
               },
             )),
