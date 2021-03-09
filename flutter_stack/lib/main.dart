@@ -26,7 +26,7 @@ class Myapp extends StatelessWidget {
                    color: Colors.green,
                    child: Center(
                      child: Text(
-                          "Hellggo",
+                          "Hello",
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.w500,
@@ -34,6 +34,64 @@ class Myapp extends StatelessWidget {
                      ),
                    ),
                  ),
+                 Positioned(
+                   top: 20, 
+                   right: 20,
+                   child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.orange,
+                      child: Center(
+                        child: Text(
+                          "Coders.",
+                          style: TextStyle(
+                             fontSize: 20,
+                             fontWeight: FontWeight.w600
+                          
+                          )
+                  ),
+                      ),
+                   ),
+                 ),
+                  Positioned(
+                   top: 20, 
+                   left: 20,
+                   child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.orange,
+                      child: Center(
+                        child: Text(
+                          "Coders.",
+                          style: TextStyle(
+                             fontSize: 20,
+                             fontWeight: FontWeight.w600
+                          
+                          )
+                        ),
+                      ),
+                   ),
+                 ),
+                  Positioned(
+                   left: 20, 
+                   bottom: 20,
+                   child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.orange,
+                      child: Center(
+                        child: Text(
+                          "Coders.",
+                          style: TextStyle(
+                             fontSize: 20,
+                             fontWeight: FontWeight.w600
+                          
+                          )
+                  ),
+                      ),
+                   ),
+                 ),
+
                ],
              ),
              ),
