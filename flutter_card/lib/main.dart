@@ -36,8 +36,30 @@ class MyApp extends StatelessWidget {
                         leading: Icon(
                           Icons.person,
                           size: 40,
+                          color: Colors.white,
                         ),
+                        title: Text(
+                          "Rahemanali Balospura",
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                        ),
+                        subtitle: Text("BCA",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w700, fontSize: 16)),
                       ),
+                    ),
+                    ButtonBar(
+                      children: [
+                        RaisedButton(
+                          child: Icon(Icons.call),
+                          color: Colors.blue,
+                          onPressed: () {},
+                        ),
+                        RaisedButton(
+                          child: Icon(Icons.person),
+                          color: Colors.blue,
+                          onPressed: () {},
+                        ),
+                      ],
                     )
                   ],
                 ),
