@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
                     size: 40,
                     textDirection: TextDirection.rtl,
                   ),
-                  Text("Delete")
+                  Text("Deletee")
                 ],
               ),
 
