@@ -41,14 +41,22 @@ class _FormsState extends State<Forms> {
               labelText: "Name",
               icon: Icon(Icons.person),
             ),
-            validator: (value){
-              if(value.isEmpty){
-                    return 'Please Fill the details ';
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Please Fill the details ';
+
               }
               return null;
             },
           ),
           TextFormField(
+          obscureText: true,
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Please Fill the details ';
+              }
+              return null;
+            },
             decoration: InputDecoration(
               hintText: "Enter Password",
               labelText: "Password",
@@ -56,22 +64,33 @@ class _FormsState extends State<Forms> {
             ),
           ),
           TextFormField(
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Please Fill the details ';
+              }
+              return null;
+            },
             decoration: InputDecoration(
               hintText: "Github",
               labelText: "Github Link",
               icon: Icon(Icons.link),
             ),
           ),
+          
           Container(
-            child: RaisedButton(
-                child: RaisedButton(
-              child: Text("Submit"),
-              onPressed: () {
-                if(keys.currentState.validate()){
-                  Scaffold.of(context).showSnackBar(SnackBar(content: Text("Vaalidation is Going"),));
-                }
-              },
-            )),
+            child: Center(
+              child: RaisedButton(
+                child: Text("Submit"),
+                onPressed: () {
+                  if (keys.currentState.validate()) {
+                    Scaffold.of(context).showSnackBar(SnackBar(
+                      content: Text("Vaalidation is Going"),
+
+                    ));
+                  }
+                },
+              ),
+            ),
           )
         ],
       ),
