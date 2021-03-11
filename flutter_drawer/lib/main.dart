@@ -1,9 +1,9 @@
-
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,25 @@ class MyApp extends StatelessWidget {
           title: Text("Drawer"),
           backgroundColor: Colors.black,
         ),
-
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.all(8.0),
+            children: [
+              UserAccountsDrawerHeader(
+                accountName: Text("Rahemanali"),
+                accountEmail: Text("rahemanali321@gmail.com"),
+                currentAccountPicture: CircleAvatar(
+                  backgroundColor: Colors.blue,
+                  child: Image.asset(
+                    "assets/joker.jpg",
+                    width: 60,
+                    height: 60,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
         body: Padding(
           padding: const EdgeInsets.all(28.0),
           child: Center(
