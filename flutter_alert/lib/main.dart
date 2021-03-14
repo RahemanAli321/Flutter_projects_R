@@ -16,6 +16,13 @@ class MyApp extends StatelessWidget {
 class ALertWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Container(
+        child: RaisedButton(
+          child: Text("Basic alert"),
+          onPressed: () {},
+        ),
+      ),
+    );
   }
 }
