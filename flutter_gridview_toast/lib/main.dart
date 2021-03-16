@@ -5,7 +5,7 @@ void main() {
   runApp(MyApp2());
 }
 
-class MyApp3 extends StatelessWidget {
+class MyApp2 extends StatelessWidget {
   showToast() {
     Fluttertoast.showToast(
         msg: "This is notification",
@@ -39,7 +39,7 @@ class MyApp3 extends StatelessWidget {
   }
 }
 
-class MyApp2 extends StatelessWidget {
+class MyAppImage extends StatelessWidget {
   List<String> images = [
     "https://images.unsplash.com/photo-1611095973512-45224aae1990?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2102&q=80",
     "https://images.unsplash.com/photo-1615731439720-47878ecc1ac6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80",
