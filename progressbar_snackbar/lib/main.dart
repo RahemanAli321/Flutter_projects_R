@@ -12,18 +12,37 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("progress bar"),
-        )
-        body: ,
+        ),
+        body: Linear(),
       ),
     );
   }
 }
 
-class  extends StatelessWidget {
+class Linear extends StatefulWidget {
+  @override
+  _LinearState createState() => _LinearState();
+}
+
+class _LinearState extends State<Linear> {
+  bool loading = false;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            child: loading
+                ? LinearProgressIndicator()
+                : Text("please click to..."),
+          ),
+          RaisedButton(
+            child: Text("download"),
+            color: Colors.blue,
+            onPressed: () {},
+          ),
+        ],
+      ),
     );
   }
 }
