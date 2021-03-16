@@ -14,7 +14,7 @@ enum Gender { Male, Female, Prefer_not_to_say }
 
 class _MyAppState extends State<MyApp> {
   bool firstbox = false;
-  bool secondbox = true;
+  bool secondbox = false;
   Gender gender = Gender.Male;
   @override
   Widget build(BuildContext context) {
