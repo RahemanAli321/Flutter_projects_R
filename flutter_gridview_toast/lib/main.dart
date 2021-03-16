@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
-  runApp(MyApp2());
+  runApp(MyApp3());
 }
 
-class MyApp2 extends StatelessWidget {
+class MyApp3 extends StatelessWidget {
   showToast() {
     Fluttertoast.showToast(
         msg: "This is notification",
@@ -39,7 +39,7 @@ class MyApp2 extends StatelessWidget {
   }
 }
 
-class MyAppImage extends StatelessWidget {
+class MyApp2 extends StatelessWidget {
   List<String> images = [
     "https://images.unsplash.com/photo-1611095973512-45224aae1990?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2102&q=80",
     "https://images.unsplash.com/photo-1615731439720-47878ecc1ac6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80",
@@ -72,12 +72,11 @@ class MyAppImage extends StatelessWidget {
             crossAxisSpacing: 10,
             children: [
               Container(
-                child: Image.network(
+                  child: Image(
+                image: NetworkImage(
                   "https://images.unsplash.com/photo-1615731439720-47878ecc1ac6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80",
-                  width: 200,
-                  height: 200,
                 ),
-              ),
+              )),
               Container(
                 child: Image.network(
                   "https://images.unsplash.com/photo-1615731439720-47878ecc1ac6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80",
