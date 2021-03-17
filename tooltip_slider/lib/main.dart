@@ -98,8 +98,7 @@ class _ImageSlider extends StatelessWidget {
       padding: EdgeInsets.all(40),
       child: ImageSlider(context),
       constraints: BoxConstraints.expand(
-        height: 200,
-
+        height: 100,
       ),
     );
   }
@@ -111,8 +110,9 @@ Swiper ImageSlider(BuildContext context) {
     itemCount: 10,
     itemBuilder: (BuildContext context, int index) {
       return Image.network(
-          "https://image.cnbcfm.com/api/v1/image/104819285-thor.jpg?v=1529476684&w=630&h=354");
-           fit: BoxFit.cover,
+        "https://image.cnbcfm.com/api/v1/image/104819285-thor.jpg?v=1529476684&w=630&h=354",
+        fit: BoxFit.cover,
+      );
     },
   );
 }
